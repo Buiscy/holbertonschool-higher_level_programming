@@ -1,5 +1,4 @@
 #!/usr/bin/python3
 number = 98
-# YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
-street = "battery"
+street = "Battery"
 print (f"{number} {street} street")

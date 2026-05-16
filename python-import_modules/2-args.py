@@ -5,6 +5,3 @@ if __name__ == '__main__':
     print('Arguments:{}'.format(i - 1))
     for i in range(1, len(argv)):
         print("{:d}: {}".format(i, argv[i]))
-
-#for i in range(1, sys.argv):
-#   print(i, sys.argv[i])

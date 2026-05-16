@@ -10,4 +10,3 @@ if __name__ == '__main__':
         print('{} arguments:'.format(argc))
     for index in range(1, len(argv)):
         print("{:d}: {}".format(index, argv[index]))
-        #test

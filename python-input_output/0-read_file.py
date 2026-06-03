@@ -2,5 +2,6 @@
 """read file module"""
 
 def read_file(filename=""):
+    """read file module"""
     with open(filename, 'r', encoding="utf-8") as f:
         print(f.read())

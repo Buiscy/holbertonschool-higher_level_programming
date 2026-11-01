@@ -20,7 +20,7 @@ if __name__ == "__main__":
     mouse.execute(
             (
                 "SELECT id, name FROM states "
-                "WHERE name = '{}' "
+                "WHERE BINARY name = '{}' "
                 "ORDER BY id ASC;"
             ).format(sql_input)
         )

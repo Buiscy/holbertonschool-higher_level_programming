@@ -17,11 +17,11 @@ if __name__ == "__main__":
         db=sql_dtbs
     )
     mouse = dbc.cursor()
-    mouse.execute( 
+    mouse.execute(
             (
-            "SELECT id, name FROM states "
-            "WHERE name = '{}' "
-            "ORDER BY id ASC;"
+                "SELECT id, name FROM states "
+                "WHERE name = '{}' "
+                "ORDER BY id ASC;"
             ).format(sql_input)
         )
     results = mouse.fetchall()

@@ -15,9 +15,11 @@ if __name__ == "__main__":
         passwd=sql_pswd,
         db=sql_dtbs
     )
-
     mouse = dbc.cursor()
-    mouse.execute("SELECT id, name FROM states WHERE name LIKE 'N%' ORDER BY id ASC;")
+    mouse.execute(
+        "SELECT id, name FROM states"
+        "WHERE name LIKE BINARY 'N%' ORDER BY id ASC;"
+        )
     results = mouse.fetchall()
     for result in results:
         print(result)

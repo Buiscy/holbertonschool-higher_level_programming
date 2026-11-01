@@ -17,8 +17,9 @@ if __name__ == "__main__":
     )
     mouse = dbc.cursor()
     mouse.execute(
-        "SELECT id, name FROM states"
-        "WHERE name LIKE BINARY 'N%' ORDER BY id ASC;"
+        "SELECT id, name FROM states "
+        "WHERE name LIKE BINARY 'N%' "
+        "ORDER BY id ASC;"
         )
     results = mouse.fetchall()
     for result in results:

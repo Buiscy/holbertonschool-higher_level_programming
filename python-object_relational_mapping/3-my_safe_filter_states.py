@@ -18,11 +18,10 @@ if __name__ == "__main__":
     )
     mouse = dbc.cursor()
     mouse.execute(
-            
                 "SELECT id, name FROM states "
                 "WHERE BINARY name = %s "
                 "ORDER BY id ASC;",
-            (sql_input,)
+                (sql_input,)
         )
     results = mouse.fetchall()
     for result in results:

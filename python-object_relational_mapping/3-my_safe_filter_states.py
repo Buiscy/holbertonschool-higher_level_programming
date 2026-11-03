@@ -20,8 +20,8 @@ if __name__ == "__main__":
     mouse.execute(
             
                 "SELECT id, name FROM states "
-                "WHERE BINARY name = '{}' "
-                "ORDER BY id ASC;"
+                "WHERE BINARY name = %s "
+                "ORDER BY id ASC;",
             (sql_input,)
         )
     results = mouse.fetchall()

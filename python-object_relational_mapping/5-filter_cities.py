@@ -31,9 +31,8 @@ if __name__ == "__main__":
     results = mouse.fetchall()
     result = []
     for item in results:
-        for i in item:
-            result.append(i)
-    print(result)
+        result.append(item[0])
+    print(", ".join(result))
 
     mouse.close()
     dbc.close()

@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """Retrieve and display states from a MySQL database."""
 import sys
 import MySQLdb
